@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="new.css">
+
+        <title>Chizzmoza</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Recently</a></li>
+             
+            </ul>
+            <ul>
+              <li><a href="#home"><img src="img/logo.png" alt="" class="logo"></a></li>
+              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="#">About Us</a></li>
+              <li class="hideOnMobile"><a href="#">Popular</a></li>
+              <li class="hideOnMobile"><a href="#">Recently</a></li>
+              
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </nav>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <img src="img/first.avif" alt="" class="home__img">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Your Cheesiest
+                            <div>
+                                <img src="img/second.avif" alt="">
+                                Fantasies!
+                            </div>
+                        </h1>
+
+                        <p class="home__desc">Satisfy your cheesiest cravings, where dairy dreams come true!</p>
+                        <a href="#" class="button">Order Now <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+               <div class="about__container container grid">
+                    <div class="about__data">
+                        <span class="section__subtitle">
+                            About Us
+                        </span>
+                        <h2 class="section__title about__title">
+                            <div>
+                                We provide
+                                <img src="img/third.png" alt="about img">
+                            </div>
+                                Cheezy Food
+                        </h2>
+                        <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <video src="img/vidabout.mp4" class=""></video>
+               </div> 
+            </section>
+
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+                <span class="section__subtitle">The Best Food</span>
+                <h2 class="section__title">Popular Dishes</h2>
+
+                <div class="popular__container container grid">
+                    <article class="popular__card">
+                        <img src="img/pizza.jpeg" alt="pizza" class="popular__img">
+                        <h3 class="popular__name">Pizza</h3>
+                        <span class="popular__desc">Pizza</span>
+
+                        <span class="popular__price">₱549.00</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="popular__card">
+                        <img src="img/cheesesticks.jpg" alt="cs" class="popular__img">
+                        <h3 class="popular__name">Cheesesticks</h3>
+                        <span class="popular__desc">cs</span>
+
+                        <span class="popular__price">₱249.00</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="popular__card">
+                        <img src="img/mozballs.jpeg" alt="mb" class="popular__img">
+                        <h3 class="popular__name">Mozzarella balls</h3>
+                        <span class="popular__desc">mb</span>
+
+                        <span class="popular__price">₱249.00</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="popular__card">
+                        <img src="img/macncheese.jpg" alt="mnc" class="popular__img">
+                        <h3 class="popular__name">Mac 'N Cheese</h3>
+                        <span class="popular__desc">mnc</span>
+
+                        <span class="popular__price">₱349.00</span>
+                        <button class="popular__button">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== RECENTLY ====================-->
+            <section class="recently section" id="recently">
+                <div class="recently__container container grid">
+                    <div class="recently__data">
+                        <span class="recently__subtitle">Recently Added</span>
+                        <h2 class="section__title">
+                            Mozz <br>
+                            Pillows
+                            
+                        </h2>
+                        <p class="recently__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                        </p>
+                        <a href="#" class="button">Order Now
+                            <i class="ri-arrow-right-line"></i></a>
+
+                    </div>
+                    <img src="img/mozzpillows.png" alt="mp" class="recently__img">
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section">
+                <div class="nl__container container grid">
+                    <div class="nl__content grid">
+                        <img src="img/nl.png" alt="nl" class="nl__img">
+                        <div class="nl__data">
+                            <span class="sention__subtitle">Newsletter</span>
+                            <h2 class="section__title">
+                                Lorem Ipsum <br>
+                                dolor
+                            </h2>
+                            <form action="" class="nl__form">
+                                <input type="email" placeholder="Enter Email" class="nl__input">
+                                <button class="button nl__button">
+                                    Send<i class="ri-send-plane-2-line"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+           <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.png" alt="logo img">
+                </a>
+                <p class="footer__desc">
+                    Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Main Menu</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Menus</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Offer</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Event</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social Media</h3>
+                    <ul class="footer__social">
+                      <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                      </a>
+                      <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                      </a>
+                      <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                      </a>
+                    </ul>
+                </div>
+            </div>
+
+           </div> 
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
